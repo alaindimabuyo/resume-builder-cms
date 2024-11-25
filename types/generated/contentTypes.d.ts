@@ -568,6 +568,7 @@ export interface ApiUserResumeBuilderUserResumeBuilder
     resumeId: Schema.Attribute.String;
     skills: Schema.Attribute.Component<'skills.skills', true>;
     summary: Schema.Attribute.Text;
+    themeColor: Schema.Attribute.String & Schema.Attribute.DefaultTo<'#ff6666'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
